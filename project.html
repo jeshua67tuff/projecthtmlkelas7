@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>latihannnnnnn</title>
+  <link rel="stylesheet" href="proooject.css" />
+
+  <!-- Styling sudah dipindahkan ke proooject.css -->
+</head>
+
+<body>
+  <div class="nav-overlay"></div>
+  <header>
+    <nav class="navbar" id="navbar">
+      <h1>IKEA Jeshua</h1>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#loginModal">login</a></li>
+        <li><a href="#loginmodal">register</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="hero" id="home">
+      <input type="radio" name="hero" id="h1" checked />
+      <input type="radio" name="hero" id="h2" />
+      <input type="radio" name="hero" id="h3" />
+
+      <div class="hero-slides">
+        <div class="hero-slide bg1">
+          <div class="hero-content">
+            <h1>IKEA <br>Best Platform <br>in the world.</h1>
+            <p>You can buy anythin in here</p>
+            <a class="btn-main" href="#products">Start Buying</a>
+          </div>
+        </div>
+
+        <div class="hero-slide bg2">
+          <div class="hero-content">
+            <h1>Be our Member <br>And get discount</h1>
+            <p>Be our member here</p>
+            <a class="btn-main" href="#loginmodal">Join Now</a>
+          </div>
+        </div>
+
+        <div class="hero-slide bg3">
+          <div class="hero-content">
+            <h1>Good <br>Product</h1>
+            <p>WOW Product</p>
+            <a class="btn-main" href="#products">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-nav">
+        <label for="h1"></label>
+        <label for="h2"></label>
+        <label for="h3"></label>
+      </div>
+    </section>
+
+    <header>
+      <h1 id="products">Shop</h1>
+    </header>
+
+    <section class="product-container" aria-label="Daftar Produk">
+      <div class="card">
+        <div class="product-image shimmer"><img src="sofaaaa.PNG" alt="Sofa" /></div>
+        <div class="product-meta">
+          <p>Sofa Premium</p>
+          <h3>Sofa Empuk</h3>
+          <p class="price">$270.00 USD</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="product-image shimmer"><img src="kursu.PNG" alt="Meja" /></div>
+        <div class="product-meta">
+          <p>Meja Keren</p>
+          <h3>Meja berkualitas</h3>
+          <p class="price">$250.00 USD</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="product-image shimmer"><img src="lemaru.PNG" alt="Lemari" /></div>
+        <div class="product-meta">
+          <p>Lemari</p>
+          <h3>Lemari kayu murah</h3>
+          <p class="price">$240.00 USD</p>
+        </div>
+      </div>
+    </section>
+
+    <header>
+      <h1>Informasi Produk</h1>
+    </header>
+
+    <section class="product-container" aria-label="Informasi Produk">
+      <div class="card">
+        <h3>Sofa</h3>
+        <p style="color:#222">Sofa ini dibuat dari bahan premium dari luar negeri yang sangat berkualitas tinggi dan sangat empuk.</p>
+        <p class="price">View More Information ></p>
+        <div class="product-image shimmer"><img src="sofaaaa.PNG" alt="Sofa" /></div>
+      </div>
+
+      <div class="card">
+        <h3>Meja</h3>
+        <p style="color:#222">Meja ini bahannya sangat bagus dari kayu premium yang dijual dengan harga terjangkau.</p>
+        <p class="price">View more information ></p>
+        <div class="product-image shimmer"><img src="kursu.PNG" alt="Meja" /></div>
+      </div>
+
+      <div class="card">
+        <h3>Lemari</h3>
+        <p style="color:#222">Lemari premium dari kayu jati asli dan memiliki banyak ruang untuk menyimpan baju atau barang lainnya.</p>
+        <p class="price">View more information ></p>
+        <div class="product-image shimmer"><img src="lemaru.PNG" alt="Lemari" /></div>
+      </div>
+    </section>
+
+    <!-- Tombol Modal -->
+    <a href="#loginModal" class="open-modal">Login</a>
+
+    <!-- Login -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Login</h2>
+        <form>
+          <div class="input-group">
+            <label for="login-email">Email</label>
+            <input id="login-email" type="email" placeholder="Masukkan Email" required>
+          </div>
+          <div class="input-group">
+            <label for="login-password">Password</label>
+            <input id="login-password" type="password" placeholder="Masukkan Password" required>
+          </div>
+          <button class="btn" type="submit">Masuk</button>
+          <div class="footer-text">
+            <marquee>Belum Punya Akun? <a href="#loginmodal">Registrasi</a></marquee>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Register -->
+    <div id="loginmodal" class="modal">
+      <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Register</h2>
+        <form>
+          <div class="input-group">
+            <label for="reg-email">Email</label>
+            <input id="reg-email" type="email" placeholder="Masukkan Email" required>
+          </div>
+          <div class="input-group">
+            <label for="reg-password">Password</label>
+            <input id="reg-password" type="password" placeholder="Masukkan Password" required>
+          </div>
+          <button class="btn" type="submit">Masuk</button>
+          <div class="footer-text">
+            <marquee>Sudah Punya Akun? <a href="#loginModal">Login</a></marquee>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="modal">
+      <div class="modal-content" style="width: min(720px, 92vw); text-align: center;">
+        <a href="#" class="close">&times;</a>
+        <h2 style="margin-bottom: 12px; color: blue;">About IKEA</h2>
+        <p style="color: blue; font-size: 14px; line-height: 1.6;">
+          IKEA adalah tempat atau website yang menjual barang barang berkualitas mulai dari kursi, meja, lemari, dan lain-lain.<br>
+          Banyak barang rumah tangga yang kamu butuhkan jadi segera belilah di website kami agar dapat membeli lebih cepat, mudah, praktis, dan yang pasti terjangkau😁👍
+        </p>
+        <img src="ikes.PNG" alt="About IKEA" style="max-width: 100%; height: auto; margin-top: 12px;" />
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="modal">
+      <div class="modal-content" style="width: min(720px, 92vw); text-align: center;">
+        <a href="#" class="close">&times;</a>
+        <h2 style="margin-bottom: 12px; color: blue;">Contact IKEA</h2>
+        <p style="color: blue; font-size: 14px; line-height: 1.6;">
+          Bila ada masalah dalam membeli atau ada sebuah bug dalam website kami, kamu bisa menghubungi kami.
+        </p>
+        <p style="color: blue; font-weight: bold;">Whatsaap: 08118065363 &nbsp; Goggle: www.djatgo.id &nbsp; Jam Buka :09:00-21:00 &nbsp; <br> Alamat: Jl. Kiper nepis bola Pedri No.123, Kota Jakarta</p>
+        <img src="ikus.PNG" alt="Contact IKEA" style="max-width: 100%; height: auto; margin-top: 12px;" />
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    const toggle = document.querySelector('#navToggle');
+    const overlay = document.querySelector('.nav-overlay');
+
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        document.body.classList.toggle('nav-open');
+      });
+    }
+
+    if (overlay) {
+      overlay.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+      });
+    }
+
+    document.querySelectorAll('.nav-links a').forEach((a) => {
+      a.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+      });
+    });
+  </script>
+</body>
+</html>
+
